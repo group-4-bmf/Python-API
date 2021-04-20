@@ -9,5 +9,6 @@ jobs:
       - name: Test with pytest
         run: |
           pip3 install pytest
+          pip3 install requests
           cd testing
           pytest
