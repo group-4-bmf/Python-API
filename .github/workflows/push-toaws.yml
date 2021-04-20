@@ -11,4 +11,4 @@ jobs:
           pip3 install pytest
           pip3 install requests
           cd testing
-          pytest
+          pytest test_api.py
