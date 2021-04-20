@@ -1,4 +1,0 @@
-{
-  "test_api.py::TestClass::test_keyval_get_dog": true,
-  "test_api.py::TestClass::test_keyval_post_dog_husky": true
-}
