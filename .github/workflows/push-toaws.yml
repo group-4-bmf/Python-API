@@ -10,7 +10,7 @@ jobs:
         run: |
           pip3 install pytest
           pip3 install requests
-          pytest test_api.py
+          pytest testing/test_api.py
       - name: Push to DockerHub
         uses: docker/build-push-action@v1
         with:
