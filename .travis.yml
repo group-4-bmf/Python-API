@@ -1,0 +1,9 @@
+language: python
+rvm:
+  - "3.8"
+ 
+install: 
+  - pip inststall -r requirment.txt
+
+  
+  
