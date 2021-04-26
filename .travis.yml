@@ -3,7 +3,7 @@ rvm:
   - "3.8"
  
 install: 
-  - pip inststall -r requirment.txt
+  - pip inststall -r requirments.txt
 
   
   
