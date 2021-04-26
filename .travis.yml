@@ -4,6 +4,7 @@ rvm:
  
 install: 
   - pip install -r requirments.txt
-
+script:
+  - pytest
   
   
