@@ -12,14 +12,15 @@ jobs:
           pip3 install requests
           pytest testing/test_api.py
           
-      - name: Push to DockerHub
-        uses: docker/build-push-action@v2
-        with:
-          run: ls
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: israel257/project-6:latest
-          tag_with_ref: true
+      - name: docker login
+        env:
+          DOCKER_USER: ${{secrets.DOCKER_USER}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      - name: Docker Push
+        run: docker push ${{secrets.DOCKER_USER}}/YOUR_DOCKER_HUB_REPO_NAME
+     
       
 
 
