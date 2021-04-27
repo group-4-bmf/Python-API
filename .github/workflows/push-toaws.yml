@@ -18,7 +18,7 @@ jobs:
           run: ls
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: israel257/flaskapp
+          repository: israel257/project-6:latest
           tag_with_ref: true
       
 
