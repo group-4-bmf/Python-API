@@ -12,14 +12,7 @@ jobs:
           pip3 install requests
           pytest testing/test_api.py
           
-      - name: docker login
-        env:
-          DOCKER_USER: ${{ secrets.DOCKER_USER }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        run: |
-          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-      - name: Docker Push
-        run: docker push ${{secrets.DOCKER_USER}}/israel257/project-6:latest
+  
      
       
 
