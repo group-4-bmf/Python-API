@@ -1,10 +1,12 @@
 language: python
-rvm:
-  - "3.8"
+services:
+  - docker
  
 install: 
   - pip install -r requirments.txt
-script:
-  - pytest
+  
+ first step:
+  - docker-compose up --build
+  
   
   
